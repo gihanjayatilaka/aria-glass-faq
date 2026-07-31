@@ -30,6 +30,11 @@ def device_streaming():
     streaming_config.profile_name = "profile9"
     device.set_streaming_config(streaming_config)
 
+    # A prior run that crashed/was killed before calling stop_streaming() leaves
+    # the device's session open; clear it before starting a fresh one.
+    if device.is_streaming():
+        device.stop_streaming()
+
     # Start and stop recording
     device.start_streaming()
     return device
@@ -130,7 +135,7 @@ def setup_streaming_receiver(device, record_to_vrs):
     # start the server
     stream_receiver.start_server()
 
-    time.sleep(10)
+    time.sleep(100)
 
     # stop streaming and terminate the server
     device.stop_streaming()
