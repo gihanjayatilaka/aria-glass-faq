@@ -20,6 +20,7 @@
 9. ```bash
    aria_gen2 device list
    ```
+
 10. ```bash
    aria_gen2 auth pair
    ```
