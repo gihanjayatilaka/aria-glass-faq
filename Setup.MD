@@ -3,7 +3,9 @@
 
 1. Install Aria Companion https://facebookresearch.github.io/projectaria_tools/gen2/ark/companion-app/start
 2. Login using your work meta account (https://forms.gle/2fckrA9DM4oAEsfZ9)
-3. Connect the glasses to the phone app and record something
+3. Connect the glasses to the phone app
+3.1 Connect the glasses to a wifi network. If you are at UMD, you have to get the MAC address of the glasses (from the companion app) and connect it to UMD IOT https://mydevices.umd.edu/
+3.2 and record something
 4. Connect the smart glasses to the PC using USB C
 5. ```bash
    conda create -n aria python=3.11
