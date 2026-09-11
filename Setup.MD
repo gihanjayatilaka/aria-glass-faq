@@ -1,6 +1,6 @@
 # List of commands
 
-1. Connect the glasses to the phone app and record.
+1. Connect the glasses to the phone app and record. https://facebookresearch.github.io/projectaria_tools/gen2/ark/companion-app/start
 2. Connect the smart glasses to the PC using USB C
 3. ```bash
    conda create -n aria python=3.11
