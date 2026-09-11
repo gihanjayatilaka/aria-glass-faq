@@ -24,13 +24,17 @@
 10. ```bash
    aria_gen2 auth pair
    ```
+
 11. Open the mobile phone app and authenticate
+
 12. ```bash
     aria_gen2 recording list
     ```
+
 13. ```bash
     aria_gen2 recording download -u 2c7b95d7-3534-43c7-bfe4-7db16a7ffa3d -o ./
     ```
+
 14. ```bash
     aria_rerun_viewer --vrs videoName.vrs
     ```
